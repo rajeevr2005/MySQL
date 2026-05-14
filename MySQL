@@ -678,3 +678,12 @@ SELECT DISTINCT marks
 FROM students
 ORDER BY marks DESC
 LIMIT 1 OFFSET 1;
+
+//or
+
+SELECT marks
+FROM students
+ORDER BY marks DESC
+LIMIT 1 OFFSET 1;
+
+//OFFSET 1 means 1 skip kar do matlab highest wala skip kar dega to automatic second highest aa jayega
