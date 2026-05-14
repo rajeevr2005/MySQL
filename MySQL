@@ -659,3 +659,22 @@ select * from student union All select * from teacher;
 jaise sabse pahle hmlog ko ek hi query ke ander aesa likhna h ki pahle marks ka average find ho phir jiska bhi marks average se jyada ho usko print karanah
 
 select avg(marks) from student where marks>(select avg(marks) from student);
+
+---------------------------------------------------------
+
+//query to find second highest marks of student
+
+
+SELECT MAX(marks) AS second_highest
+FROM students
+WHERE marks < (
+    SELECT MAX(marks)
+    FROM students
+);
+
+//or
+
+SELECT DISTINCT marks
+FROM students
+ORDER BY marks DESC
+LIMIT 1 OFFSET 1;
