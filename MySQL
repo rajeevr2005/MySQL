@@ -687,3 +687,10 @@ ORDER BY marks DESC
 LIMIT 1 OFFSET 1;
 
 //OFFSET 1 means 1 skip kar do matlab highest wala skip kar dega to automatic second highest aa jayega
+
+
+---------------------------------------
+
+SELECT *
+FROM student
+WHERE name LIKE '%n';
