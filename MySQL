@@ -690,7 +690,39 @@ LIMIT 1 OFFSET 1;
 
 
 ---------------------------------------
+//Like operator 
+
 
 SELECT *
 FROM student
 WHERE name LIKE '%n';
+
+-----------------------------------------------------------------------------------
+
+//wildcard operator
+
+MySQL me 2 wildcard hote hain:
+
+
+-------------------------------------------------------
+1. % → Multiple characters
+
+SELECT * 
+FROM student
+WHERE name LIKE 'R%';
+
+Name R se start hona chahiye
+Baad me kuch bhi ho sakta hai
+
+-----------------------------
+
+2. _ → Single character
+
+SELECT *
+FROM student
+WHERE name LIKE 'R_j';
+
+Match:
+Raj
+Rij
+Roj
