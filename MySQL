@@ -726,3 +726,13 @@ Match:
 Raj
 Rij
 Roj
+
+-------------------------------------
+
+// Duplicate Names Find Karna
+
+SELECT name, COUNT(*)
+FROM student
+GROUP BY name
+HAVING COUNT(*) > 1;
+
