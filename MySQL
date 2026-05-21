@@ -742,3 +742,8 @@ Delete aur drop or truncate me kon sa rollback ho sakta h
 
 Ans- Delete
 
+DELETE FROM employees WHERE id = 1;
+ROLLBACK;
+
+WHERE laga sakte ho
+Rollback ho sakta hai agar COMMIT nahi hua ho
