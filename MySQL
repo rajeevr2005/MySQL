@@ -736,3 +736,9 @@ FROM student
 GROUP BY name
 HAVING COUNT(*) > 1;
 
+-------------------------------------
+
+Delete aur drop or truncate me kon sa rollback ho sakta h
+
+Ans- Delete
+
