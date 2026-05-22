@@ -491,6 +491,39 @@ course varchar(50)
 
 insert into course(id,course) values(3,"BE"),(4,"BCA"),(5,"MCA");
 
+-----------------------------------------------------------------------------
+//Normalization
+
+Normalization is a method of breaking down a large complex table into small related table and define relationship between them. It reduce the redendency(duplicate) of data in a table also remove inconsistency problem and unwanted risk.
+
+//Advantage
+1. Maintain data integrity
+2. reduce the structure of table
+3. Avoid null value
+4. structuring of data, show that model is flexible and easy to use.
+
+//Types of Normalization
+
+1. 1NF
+2. 2NF
+3. 3NF
+4. BCNF
+5. 4NF
+6. 5NF
+
+
+1. 1NF - Data must be stored in a table with rows and column, and each column should contain individual values.
+	
+
+----------------------------------------------------------------------------------------------------
+
+//E-R Diagram concept
+
+1. Entity(Shape rectangle)=jiska table bn sake jaise student ka(sid,sname, sclass, saddress), teacher ka(tid, tname, tsubject, taddress), employee ka(empid, empname, empaddress)
+
+2. Attribute(shape oval) =  kisi bhi table ka column jaise student table ka sid, sname ye sab ko attribute hota h
+
+3. Relation btane ke liye diamond shape ka use karnge jaise teacher entity hai aur student bhi entity h, to teacher student ko teach karta h n to diamond shape me teach likhnge 
 
 select * from student inner join course on student.id=course.id;		//id ke base pe join kiye h	kyuki id dono me hai isiye
 
