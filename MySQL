@@ -785,16 +785,20 @@ Rollback ho sakta hai agar COMMIT nahi hua ho
 -------------------------------------
 //how many percent employee in which department 
 
-SELECT 
-    department,
-    COUNT(*),
-    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM employees),
-        2
-    )
-FROM employees
-GROUP BY department;
+SELECT department, COUNT(*), ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM employees), 2 ) FROM employees GROUP BY department;
 
 department          total_employees            percentage
 HR                     1                         25.00
 IT                     2                         50.00
 Sales                  1                          25.00
+
+-----------------------------------------------
+
+FROM → WHERE → GROUP BY → HAVING → ORDER BY
+
+SELECT department, SUM(salary) AS total_salary
+FROM employees
+WHERE salary > 30000
+GROUP BY department
+HAVING SUM(salary) > 60000
+ORDER BY total_salary DESC;
