@@ -794,15 +794,7 @@ SELECT
 FROM employees
 GROUP BY department;
 
-department
-total_employees
-percentage
-HR
-1
-25.00
-IT
-2
-50.00
-Sales
-1
-25.00
+department          total_employees            percentage
+HR                     1                         25.00
+IT                     2                         50.00
+Sales                  1                          25.00
